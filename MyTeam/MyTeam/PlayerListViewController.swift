@@ -14,10 +14,12 @@ class PlayerListViewController: UITableViewController {
     let positions = ["PG", "SG", "SF", "PF", "C", "U"]
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let cell = tableView.dequeueReusableCellWithIdentifier(<#T##identifier: String##String#>)
+        return positions.count
+        
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCellWithIdentifier("position")
     }
 }
